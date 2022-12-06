@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-cpp
+	docker run aoc-jl
 	
 build:
-	docker build -qt aoc-cpp .
+	docker build -qt aoc-jl .

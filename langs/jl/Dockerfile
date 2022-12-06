@@ -1,9 +1,9 @@
-FROM gcc
+FROM julia
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.jl solution.jl
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD julia solution.jl
