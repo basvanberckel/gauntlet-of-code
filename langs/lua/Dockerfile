@@ -1,9 +1,9 @@
-FROM gcc
+FROM woahbase/alpine-lua
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.lua solution.lua
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD  lua solution.lua
