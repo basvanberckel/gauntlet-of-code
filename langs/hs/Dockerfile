@@ -1,9 +1,9 @@
-FROM gcc
+FROM haskell
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.hs solution.hs
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD ghc -o solution solution.hs && ./solution
