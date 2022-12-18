@@ -1,9 +1,9 @@
-FROM gcc
+FROM perl
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.pl solution.pl
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD perl solution.pl
