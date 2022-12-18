@@ -1,9 +1,9 @@
-FROM gcc
+FROM zenika/kotlin
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.kt solution.kt
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD kotlinc solution.kt -include-runtime -d solution.jar && java -jar solution.jar
