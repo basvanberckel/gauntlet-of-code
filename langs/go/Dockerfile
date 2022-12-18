@@ -1,9 +1,9 @@
-FROM gcc
+FROM golang
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.go solution.go
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD go run solution.go
