@@ -1,9 +1,9 @@
 
 run: build
-	docker run aoc-swipl
+	docker run --rm aoc-swipl
 
 it: build
-	docker run -it aoc-swipl
+	docker run -it --rm aoc-swipl
 	
 build:
 	docker build -qt aoc-swipl .

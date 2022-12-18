@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-cs
+	docker run --rm aoc-cs
 	
 build:
 	docker build -t aoc-cs .

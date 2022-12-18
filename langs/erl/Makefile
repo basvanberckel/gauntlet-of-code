@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-erl
+	docker run --rm aoc-erl
 	
 build:
 	docker build -qt aoc-erl .

@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-lua
+	docker run --rm aoc-lua
 	
 build:
 	docker build -qt aoc-lua .

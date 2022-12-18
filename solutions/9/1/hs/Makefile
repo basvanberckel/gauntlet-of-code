@@ -1,9 +1,9 @@
 
 run: build
-	docker run aoc-hs
+	docker run --rm aoc-hs
 
 dbg: build
-	docker run -it aoc-hs ghci solution.hs
+	docker run -it --rm aoc-hs ghci solution.hs
 	
 build:
 	docker build -qt aoc-hs .

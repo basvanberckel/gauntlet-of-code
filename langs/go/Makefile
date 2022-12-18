@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-cpp
+	docker run --rm aoc-go
 	
 build:
-	docker build -qt aoc-cpp .
+	docker build -qt aoc-go .

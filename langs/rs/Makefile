@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-rs
+	docker run --rm aoc-rs
 	
 build:
 	docker build -qt aoc-rs .

@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-pl
+	docker run --rm aoc-pl
 	
 build:
 	docker build -qt aoc-pl .

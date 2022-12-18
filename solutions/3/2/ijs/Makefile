@@ -1,6 +1,6 @@
 
 run: build
-	docker run aoc-ijs
+	docker run --rm aoc-ijs
 
 it: build
 	docker run -it --entrypoint ijconsole aoc-ijs solution.ijs
