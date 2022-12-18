@@ -1,9 +1,9 @@
-FROM gcc
+FROM eclipse-temurin:17-jdk-jammy
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.java solution.java
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD java solution.java
