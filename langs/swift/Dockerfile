@@ -1,9 +1,9 @@
-FROM gcc
+FROM swift
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.swift solution.swift
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD swift solution.swift
