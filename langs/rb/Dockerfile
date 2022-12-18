@@ -1,9 +1,9 @@
-FROM gcc
+FROM ruby
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.rb solution.rb
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD ruby solution.rb
