@@ -1,9 +1,9 @@
-FROM gcc
+FROM php
 
 WORKDIR /app
 
 COPY cases cases
 
-COPY solution.cpp solution.cpp
+COPY solution.php solution.php
 
-CMD g++ -o solution solution.cpp && ./solution
+CMD php solution.php
